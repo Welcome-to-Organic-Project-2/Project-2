@@ -1,0 +1,229 @@
+@use './variables' as v;
+
+.bottom-bar {
+    margin-top: 50px;
+    .bottom-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        h5 {
+            margin-top: 0px;
+        }
+        .container-one {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            .logo-and-socials-container {
+                width: 48%;
+                .logo {
+                    img {
+                        filter: brightness(0) saturate(100%) invert(28%) sepia(59%) saturate(5314%) hue-rotate(77deg) brightness(90%) contrast(105%);
+                    }
+                    margin: 0 0 15px 0;
+                }
+                .logo-text {
+                    line-height: 2;
+                } 
+                .social-media-container ul {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 30px 0 0 0;
+                    gap: 15px
+                }
+                .social-media img {
+                    width: 30px;
+                    height: 30px;
+                    padding: 8px;
+                    background: v.$green;
+                    border-radius: 50%;
+                }
+            }
+            .quick-links-container {
+                width: 40%;
+                .pages a {
+                    text-decoration: none;
+                    font-size: 0.75rem;
+                    line-height: 3;
+                }
+                h5 {
+                    margin: 0 0 18px 0;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .container-two {
+            display: flex;
+            justify-content: space-between;
+            width: 49%;
+            .recent-products-container {
+                h5 {
+                    margin: 0 0 30px 0;
+                    letter-spacing: 1px;
+                }
+            }
+            .recent-products-list {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                li {
+                    display: flex;
+                    gap: 10px;
+                    .fresh-products-text {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+                    .fresh-products-text p {
+                        margin-bottom: 0px;
+                        margin-top: 0px;
+                    }
+                    .fresh-products-text span {
+                        color: v.$green;
+                    } 
+                }
+                img {
+                    width: 70px;
+                }
+            }
+        }
+        .subscribe {
+            width: 42%;
+            h5 {
+                margin: 0 0 30px 0;
+                letter-spacing: 1px;
+            }
+            .subscribe-field {
+                font-weight: bold;
+                margin: 0 0 10px 0;
+            }
+            .oreg-info {
+                margin: 0 0 15px 0;
+            }
+            input {
+                border: 1px solid silver;
+                border-radius: 5px;
+                padding: 5px 5px 5px 15px;
+                font-family: v.$primary-font;
+                font-size: 0.70rem;
+            }
+        } 
+    }
+    
+}
+
+/* media queries */ 
+
+@media (max-width: 1024px) {
+    .bottom-bar {
+        li {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    .bottom-bar {
+        li {
+            display: block;
+        }
+    }
+    .bottom-bar-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        // .container-one {
+        //     display: flex;
+        // }
+        // .logo-and-socials-container {
+        //     width: 100%;
+        // }
+
+        // .quick-links-container {
+        //     width: 100%;
+        //     .pages {
+        //         display: flex;
+        //     }
+        // }
+        }
+    }
+
+@media (max-width: 810px) {
+    .bottom-bar .wrapper .bottom-bar-wrapper .container-one {
+        width: 100%;
+    }
+    .bottom-bar .wrapper .bottom-bar-wrapper .container-two {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .bottom-bar .bottom-bar-wrapper {
+        width: 100%;
+    }
+
+    .bottom-bar .bottom-bar-wrapper .container-one {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-bar .bottom-bar-wrapper .container-one .logo-and-socials-container {
+        width: 100%;
+        text-align: center;
+        .social-media-container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .bottom-bar .bottom-bar-wrapper .container-one .quick-links-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        h5 {
+            text-align: center;
+        }
+        .pages {
+            display: flex;
+            justify-content: space-between;
+            .more-quick-links {
+                text-align: end;
+            }
+        }
+    }
+    .bottom-bar .bottom-bar-wrapper .container-two {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-bar .bottom-bar-wrapper .container-two .recent-products-container {
+        width: 100%;
+        text-align: center;
+        .recent-products-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
+            .fresh-products-text {
+                span {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .bottom-bar .bottom-bar-wrapper .container-two .subscribe {
+        width: 100%;
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+}
+
+
+// .container-one {
+            //     display: flex;
+            //     .quick-links-container {
+            //         display: flex; 
+            //         flex-direction: column;
+            //             .li {
+            //                     display: block;
+            //                 }quick-links {
+                            
+            //             }
+            //     }
+            // }

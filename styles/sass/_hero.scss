@@ -1,0 +1,78 @@
+@use './variables';
+
+
+.hero-wrapper {
+    display: flex;
+    position: relative;
+    top: 75px;
+    .pop-up {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        max-width: 770px;
+        width: 500px;
+        height: 250px;
+        background-color: whitesmoke;
+        border-radius: 5px; 
+        .pop-up-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .shop-button-container {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        min-width: 310px;
+        .button {
+            margin: 30px 0 0 0;
+            width: 100px;
+        }
+        h1 {
+            margin: 0 0 15px 0;
+        }
+        p {
+            margin: 0
+        }
+    }
+    .hero-image-container {
+        width: 60%;
+        min-width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/* media queries */ 
+
+@media (max-width: 1024px) {
+    .hero-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        .button {
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .hero-wrapper {
+        position: relative;
+        .hero.image.container img {
+            display: none;
+        }
+    }
+}
+
+

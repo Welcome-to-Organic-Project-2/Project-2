@@ -1,0 +1,114 @@
+@use './variables' as v;
+
+.gallery {
+    background: url(../organic-project/assets/grass.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 100px; 
+        margin-top: 150px;
+        h3 {
+            color: v.$black;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    .categories {
+        padding: 0 60px;
+        .category-items {
+            display:flex;
+            justify-content: space-around;
+            .button {
+                padding: 10px 20px 10px 20px;
+                width: auto;
+            }
+            .button-category {
+                text-transform: capitalize;
+                font-weight: 100;
+            }
+        }
+    }
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        .first-row {
+            width: 32%;
+            .first-row-image {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .second-row {
+            width: 49%;
+            .second-row-image {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        .third-row {
+            width: 32%;
+            .third-row-image {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        padding-bottom: 100px;
+    }
+}
+              
+/* media queries */ 
+
+@media (max-width: 1024px) {
+    .gallery {
+        .category-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            .button {
+                display: block;
+                width: fit-content;
+            }
+        }
+        .image-gallery {
+            display: flex;
+            li {
+                display: flex;
+                flex-basis: 40%;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .gallery .image-gallery {
+        display: flex;
+        li {
+            display: flex;
+            flex-basis: 80%;
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,66 @@
+@use './variables' as v;
+
+
+footer {
+    margin-top: -60px;
+    .footer-container {
+        width: fit-content;
+        img {
+            width: 100%;
+            z-index: -1;
+            position: relative;
+            bottom: -50px;
+            object-fit: none;
+        }
+        p {
+            text-align: center;
+            color: v.$white;
+            margin: 10px 0 0 0; 
+        }
+    }
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    footer .footer-container {
+        width: fit-content;
+        p {
+            margin: 20px 0 0;
+        }
+    }
+}
+   
+@media (max-width: 810px) {
+    footer .footer-container {
+        width: fit-content;
+        p {
+            color: v.$black;
+            margin: 20px 0 0;
+        }
+        img {
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer .footer-container {
+        width: fit-content; 
+        p {
+            color: v.$black;
+            margin: 100px 0 0;
+            background: v.$green;
+            text-align: center;
+        }
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    footer .footer-container p {
+        text-align: center;
+    }
+}

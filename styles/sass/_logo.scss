@@ -1,0 +1,7 @@
+@use './variables' as v;
+
+.logo img {
+    filter: v.$primary-logo-color;
+    width: 3.5rem;
+    height: auto;
+}

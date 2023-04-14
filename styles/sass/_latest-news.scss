@@ -1,0 +1,77 @@
+@use './variables' as v;
+
+.latest-news {
+    background: v.$green;
+    .text-container {
+        text-align: center;
+        padding-top: 50px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 75px 100px 50px;
+        h3 {
+            text-transform: uppercase;
+        }
+    }
+    .news-blocks {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 75px;
+        .news-block {
+            background: v.$white;
+            border-radius: 5px;
+            box-shadow: 4px 4px 10px -5px black;
+            h5 {
+                margin: 15px 0 15px 0; 
+                letter-spacing: 1px;
+            }
+            .text {
+                margin: 0px 10px 30px 10px;
+                .button { 
+                    margin: 20px 0 0 0;
+                    padding: 12px 0 12px 0; 
+                    width: 125px;
+                    .read-more {
+                        text-transform: capitalize;
+                    }
+                }
+            }
+            .image-container {
+                width: 90%;
+                margin: 0 auto;
+                .blog-image {
+                    background: v.$white;
+                    width: 100%;
+                    margin-top: 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+/* media queries */ 
+
+@media (max-width: 810px) {
+    .news-blocks {
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+}
+
+@media (max-width: 375px) {
+    .latest-news .wrapper {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .text-container {
+            display: flex;
+        }
+        .news-blocks {
+            flex-direction: column;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+}

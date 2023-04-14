@@ -1,0 +1,49 @@
+@use './variables' as v;
+
+html { 
+    font-family: v.$primary-font;
+    // font-family: v.$secondary-font;
+    font-size: 125%;
+    background: #fff;
+}
+
+p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: v.$secondary-font;
+    font-size: 1.75rem;
+    line-height: 1.5;
+
+}
+
+h2 {
+    font-family: v.$secondary-font;
+}
+
+h3 {
+    font-family: v.$secondary-font;
+}
+
+h5 {
+    font-family: v.$secondary-font;
+}
+
+.price {
+    color: v.$green;
+}
+
+.price-change {
+    color: v.$green;
+    text-decoration: line-through;
+}
+
+.button p {
+    font-family: v.$primary-font;
+}
+
+.button a {
+    font-family: v.$primary-font;
+}

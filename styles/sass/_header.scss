@@ -1,0 +1,43 @@
+@use './variables' as v;
+
+.main-header {
+        background: url(../organic-project/assets/header/background.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+     }
+     .nav-wrapper {
+        background-color: v.$white;
+        padding: 5px;
+        box-shadow: 3px 3px 5px v.$box-shadow-color-1;
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            .nav-icon {
+                display: none;
+            }
+            .nav-items {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                .menu {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+@media (max-width: 1024px) {
+
+    .nav-wrapper .nav-container .nav-icon {
+        display: block;
+        margin: 8px 0 0 0;
+    }
+
+
+}
+    
+
+
+
+
