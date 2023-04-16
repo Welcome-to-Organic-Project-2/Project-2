@@ -66,7 +66,39 @@
         }
     }
 }
+
+// Search bar JS
+
+.text-container #searchbar {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0;
+    width: 30%;
+    transition: 0.15s ease;
+    
+    &:focus {
+        width: 70%;
+        background-color: rgb(235, 235, 235);
+    }
+}
  
+  #searchbar {
+      margin-left: 15%;
+      padding: 15px;
+      border-radius: 10px;
+  }
+
+
+  #list {
+      font-size: 1.5em;
+      margin-left: 90px;
+  }
+
+  .block {
+      display: block;
+  }
+
 /* media queries */ 
 
 @media (max-width: 1024px) {

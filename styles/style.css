@@ -736,6 +736,40 @@ nav ul li a:visited {
   width: 115px;
 }
 
+.text-container #searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0;
+  width: 30%;
+  -webkit-transition: 0.15s ease;
+  transition: 0.15s ease;
+}
+.text-container #searchbar:focus {
+  width: 70%;
+  background-color: rgb(235, 235, 235);
+}
+
+#searchbar {
+  margin-left: 15%;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#list {
+  font-size: 1.5em;
+  margin-left: 90px;
+}
+
+.block {
+  display: block;
+}
+
 /* media queries */
 @media (max-width: 1024px) {
   .our-products .block-wrapper {
