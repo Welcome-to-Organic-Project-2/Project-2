@@ -26,6 +26,9 @@
         grid-auto-rows: 50% 50%;
         justify-content: space-between;
         padding-top: 30px;
+        li {
+            list-style-type: none
+        }
         .block {
             width: 170px;
             .image {

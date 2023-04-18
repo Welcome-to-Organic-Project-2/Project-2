@@ -693,6 +693,9 @@ nav ul li a:visited {
           justify-content: space-between;
   padding-top: 30px;
 }
+.our-products .block-wrapper li {
+  list-style-type: none;
+}
 .our-products .block-wrapper .block {
   width: 170px;
 }
