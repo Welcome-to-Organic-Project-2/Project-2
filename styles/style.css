@@ -746,15 +746,15 @@ nav ul li a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin: 0;
   width: 30%;
   -webkit-transition: 0.15s ease;
   transition: 0.15s ease;
 }
 .text-container #searchbar:focus {
-  width: 70%;
+  width: 50%;
   background-color: rgb(235, 235, 235);
 }
 

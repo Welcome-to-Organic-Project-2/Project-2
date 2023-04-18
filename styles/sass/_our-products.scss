@@ -75,13 +75,13 @@
 .text-container #searchbar {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-self: flex-start;
     margin: 0;
     width: 30%;
     transition: 0.15s ease;
     
     &:focus {
-        width: 70%;
+        width: 50%;
         background-color: rgb(235, 235, 235);
     }
 }
