@@ -48,24 +48,24 @@ search.addEventListener ("input", () => {
 
    
 
-    // for (let i = 0; i < productsList.length; i++) {
-    //     if (productsList[i].innerHTML.toLowerCase().includes(input)) {
-    //         productsList[i].style.display = "block";
-    //     }
-    //     else {
-    //         productsList[i].style.display = "none";
-    //     }
-    // }
-
-    search.forEach ( (searchItem) => {
-    if (searchItem.innerHTML.toLowerCase().includes(input)) {
-    productsList[i].style.display = "block";
-}
+    for (let i = 0; i < productsList.length; i++) {
+        if (productsList[i].innerHTML.toLowerCase().includes(input)) {
+            productsList[i].style.display = "block";
+        }
         else {
-        searchItem.style.display = "none";
+            productsList[i].style.display = "none";
+        }
     }
-    })
-});
+
+//     search.forEach ( (searchItem) => {
+//     if (searchItem.innerHTML.toLowerCase().includes(input)) {
+//     productsList[i].style.display = "block";
+// }
+//         else {
+//         searchItem.style.display = "none";
+//     }
+//     })
+// });
       
         
 // click on hamburger menu
