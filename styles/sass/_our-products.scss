@@ -26,8 +26,13 @@
         grid-auto-rows: 50% 50%;
         justify-content: space-between;
         padding-top: 30px;
+        li {
+            list-style-type: none
+        }
         .block {
             width: 170px;
+            margin-bottom: 60px;
+            max-height: 350px;
             .image {
                 width: 170px;
                 img {
@@ -38,6 +43,8 @@
                 border: 2px solid v.$border-color;
                 margin: -5px 0 -15px 0;
                 padding: 0 0 20px 0;
+                height: 70%;
+                position: relative;
                 h5 {
                     letter-spacing: 1px;
                     margin: 15px 10px 10px 10px;
@@ -53,7 +60,11 @@
                 text-transform: none;
             }
             .button {
-                margin: 0 0 0 15px;
+                margin: 0 0 10px 15px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
             }
         }
     }
@@ -66,7 +77,39 @@
         }
     }
 }
+
+// Search bar JS
+
+.text-container #searchbar {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    margin: 0;
+    width: 30%;
+    transition: 0.15s ease;
+    
+    &:focus {
+        width: 50%;
+        background-color: rgb(235, 235, 235);
+    }
+}
  
+  #searchbar {
+      margin-left: 15%;
+      padding: 15px;
+      border-radius: 10px;
+  }
+
+
+  #list {
+      font-size: 1.5em;
+      margin-left: 90px;
+  }
+
+  .block {
+      display: block;
+  }
+
 /* media queries */ 
 
 @media (max-width: 1024px) {

@@ -1,0 +1,59 @@
+// const allProducts = [
+//     {
+//         title: "Mixed Vegetables",
+//         url: "organic-project/assets/product1.jpeg",
+//         price: 19.99,
+//         priceType: "$",
+//         type: "fruit",
+//     },
+//     {
+//         title: "Limes",
+//         url: "organic-project/assets/product2.jpeg",
+//         price: 22.50,
+//         priceType: "$",
+//         type: "fruit",
+//     },
+//     {
+//         title: "Eggplant",
+//         url: "organic-project/assets/product3.jpeg",
+//         price: 59.00,
+//         priceType: "$$",
+//         type: "vegetable",
+//     },
+//     {
+//         title: "Courgette",
+//         url: "organic-project/assets/product4.jpeg",
+//         price: 22.99,
+//         priceType: "$",
+//         type: "vegetable",
+//     },
+//     {
+//         title: "Peas",
+//         url: "organic-project/assets/product5.jpeg",
+//         price: 30.00,
+//         priceType: "$",
+//         type: "vegetable",
+//     },
+//     {
+//         title: "Olives",
+//         url: "organic-project/assets/product6.jpeg",
+//         price: 30.00,
+//         priceType: "$",
+//         type: "vegetable",
+//     },
+//     {
+//         title: "Cabbage",
+//         url: "organic-project/assets/product7.jpeg",
+//         price: 50.00,
+//         priceType: "$$",
+//         type: "vegetable",
+//     },
+//     {
+//         title: "Lettuce",
+//         url: "organic-project/assets/product8.jpeg",
+//         price: 50.00,
+//         priceType: "$$",
+//         type: "vegetable",
+//     }
+// ]
+// set(dbRef, allProducts);
