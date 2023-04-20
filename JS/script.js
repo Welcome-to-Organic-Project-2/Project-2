@@ -20,7 +20,7 @@ onValue(dbRef, (data) => {
         newListItem.innerHTML = `
         
                     <div class="image">
-                            <img src=${item.url} height="" width="" alt="">
+                            <img src=${item.url} height="" width="" alt="${item.title}">
                         </div>
                         <div class="text">
                             <h5>${item.title}</h5>
@@ -31,7 +31,6 @@ onValue(dbRef, (data) => {
                         <div class="button">
                             <div class="button-cart"><a href=# class="cart">Add to Cart</a></div>
                         </div>
-        
         `;
         ulElement.append(newListItem);
     });
@@ -43,18 +42,29 @@ search.addEventListener ("input", () => {
 
     let input = document.getElementById('searchbar').value;
         input = input.toLowerCase();
+        input = input.replace(/\s/g, "");
+        
         const productsList = document.getElementsByClassName('block');
 
    
 
-    for (let i = 0; i < productsList.length; i++) {
-        if (productsList[i].innerHTML.toLowerCase().includes(input)) {
-            productsList[i].style.display = "block";
-        }
+    // for (let i = 0; i < productsList.length; i++) {
+    //     if (productsList[i].innerHTML.toLowerCase().includes(input)) {
+    //         productsList[i].style.display = "block";
+    //     }
+    //     else {
+    //         productsList[i].style.display = "none";
+    //     }
+    // }
+
+    search.forEach ( (searchItem) => {
+    if (searchItem.innerHTML.toLowerCase().includes(input)) {
+    productsList[i].style.display = "block";
+}
         else {
-            productsList[i].style.display = "none";
-        }
+        searchItem.style.display = "none";
     }
+    })
 });
       
         

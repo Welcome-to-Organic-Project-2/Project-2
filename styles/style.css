@@ -698,6 +698,8 @@ nav ul li a:visited {
 }
 .our-products .block-wrapper .block {
   width: 170px;
+  margin-bottom: 60px;
+  max-height: 350px;
 }
 .our-products .block-wrapper .block .image {
   width: 170px;
@@ -709,6 +711,8 @@ nav ul li a:visited {
   border: 2px solid whitesmoke;
   margin: -5px 0 -15px 0;
   padding: 0 0 20px 0;
+  height: 70%;
+  position: relative;
 }
 .our-products .block-wrapper .block .text h5 {
   letter-spacing: 1px;
@@ -724,7 +728,10 @@ nav ul li a:visited {
   text-transform: none;
 }
 .our-products .block-wrapper .block .button {
-  margin: 0 0 0 15px;
+  margin: 0 0 10px 15px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 .our-products .button-container {
   display: -webkit-box;
