@@ -99,13 +99,41 @@
     </section>
 
     <section class="our-products">
-
+        
         <div class="wrapper">
             <div class="text-container">
                 <h3>Our Products</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolor ducimus distinctio impedit id quis?</p>
-                <input id="searchbar" type="text" name="search" placeholder="Search Products..">
+                <p>To search for our available products, you can use either the search bar or the filter.</p>
+
+                <!-- New JS functionality HTML, added April 23 -->
+
+                <div class="filter-and-search">
+
+                    <input id="search-bar" type="text" name="search" placeholder="Search Products..">
+                    <form action="#" type="#" name="filter" id="#filter-form">
+
+                        <div class="filter-radio-buttons">
+                            <input type="radio" name="product-type" value="fruit" id="#fruit-input" required>Fruit</input>
+                            <input type="radio" name="product-type" value="vegetable" id="#vegetable-input" required>Vegetable</input>
+                            <input type="radio" name="product-price" value="$" id="#cheap-input" required>$</input>
+                            <input type="radio" name="product-price" value="$$" id="#expensive-input" required>$$</input>
+                        </div>
+                       
+                        <div class="filter-buttons">
+                            <button type="submit">Submit</button>
+                            <button id="#all">Show all</button>
+                            <button id="#clear" type="reset">Clear</button>
+                        </div>
+                        
+                    </form>
+
+                </div>
+
+                <p class="not-available" style="display: none">Item not available</p>
+                
             </div>
+
 
             <div class="blocks">
                 <div class="block-wrapper">
