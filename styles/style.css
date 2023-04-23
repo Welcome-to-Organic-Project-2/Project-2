@@ -780,7 +780,10 @@ nav ul li a:visited {
 #search-bar {
   margin-left: 15%;
   padding: 15px;
-  border-radius: 10px;
+  border: solid 1px silver;
+  border-radius: 5px;
+  padding: 8px 15px 8px;
+  font-size: 0.6rem;
 }
 
 #list {
@@ -803,6 +806,19 @@ nav ul li a:visited {
       align-self: flex-start;
   margin: 0;
 }
+.text-container .filter-form .filter-radio-buttons {
+  font-size: 0.75rem;
+  margin: 0 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.text-container .filter-form .filter-radio-buttons :focus {
+  background-color: rgb(235, 235, 235);
+}
 
 /* media queries */
 @media (max-width: 1024px) {
@@ -816,10 +832,73 @@ nav ul li a:visited {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .filter-and-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-and-search #search-bar {
+    min-width: 100%;
+  }
 }
 @media (max-width: 375px) {
   .our-products .wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .filter-and-search .filter-radio-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .filter-and-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #search-bar {
+    min-width: 100%;
+  }
+  #filter-form {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .filter-and-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #search-bar {
+    min-width: 100%;
+  }
+  .filter-radio-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .gallery {

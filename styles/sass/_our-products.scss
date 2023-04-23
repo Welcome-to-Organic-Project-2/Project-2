@@ -104,7 +104,10 @@
   #search-bar {
       margin-left: 15%;
       padding: 15px;
-      border-radius: 10px;
+      border: solid 1px silver;
+      border-radius: 5px;
+      padding: 8px 15px 8px;
+      font-size: 0.6rem;
   }
 
 
@@ -123,6 +126,15 @@
     justify-content: center;
     align-self: flex-start;
     margin: 0;
+    .filter-radio-buttons {
+        font-size: 0.75rem;
+        margin: 0 0 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        :focus {
+            background-color: rgb(235, 235, 235);
+        }
+    }
   }
 
 
@@ -134,11 +146,54 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .filter-and-search {
+        display: flex;
+        flex-direction: column;
+        #search-bar {
+            min-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 375px) {
     .our-products .wrapper {
         width: 100%;
+    }
+}
+
+@media(max-width: 700px) {
+    .filter-and-search {
+        .filter-radio-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .filter-and-search {
+        display: flex;
+        flex-direction: column;
+    }
+    #search-bar {
+        min-width: 100%;
+    }
+    #filter-form {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .filter-and-search {
+        display: flex;
+        flex-direction: column;
+    }
+    #search-bar {
+        min-width: 100%;
+    }
+    .filter-radio-buttons {
+        display: flex;
+        flex-direction: column;
     }
 }
 
