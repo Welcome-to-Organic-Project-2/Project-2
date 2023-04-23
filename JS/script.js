@@ -56,6 +56,7 @@ search.addEventListener ("input", () => {
             productsList[i].style.display = "none";
         }
     }
+});
 
 //     search.forEach ( (searchItem) => {
 //     if (searchItem.innerHTML.toLowerCase().includes(input)) {
@@ -65,7 +66,6 @@ search.addEventListener ("input", () => {
 //         searchItem.style.display = "none";
 //     }
 //     })
-// });
       
         
 // click on hamburger menu
