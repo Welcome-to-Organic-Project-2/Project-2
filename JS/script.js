@@ -72,16 +72,27 @@ search.addEventListener("input", () => {
 	for (let i = 0; i < productsList.length; i++) {
 		if (productsList[i].innerHTML.toLowerCase().includes(input)) {
 			productsList[i].style.display = "block";
-			document.querySelector(".not-available").style.display="none"
+		
 		} 
-		else { (!productsList[i].innerHTML.toLowerCase().includes(input)) 
+		else {
 			productsList[i].style.display ="none";
-			document.querySelector(".not-available").style.display="block"
 		}
+
+		let array = Array.from(productsList).every((item) => {
+			return item.style.display === "none";
+		}); 
+
+		if (array) {
+			document.querySelector(".not-available").style.display = "block";
+		} else {
+			document.querySelector(".not-available").style.display = "none";
+		}
+
 	}
 	if (input === "") {
 		document.querySelector(".not-available").style.display="none"
 	}
+
 });
 
 // Reusable function, used to print the elements of "itemsArr" array on the .block-wrapper element
