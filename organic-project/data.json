@@ -1,0 +1,60 @@
+{
+    allProducts: [
+        {
+    title: "Mixed Vegetables",
+    url: "images/mixed-veg.jpg",
+    price: 19.99,
+    priceType: "$",
+    type: "fruit"
+        }
+    {
+    title: "Limes",
+    url: "images/limes.jpg",
+    price: 22.50,
+    priceType: "$",
+    type: "fruit"
+        }
+    {
+    title: "Eggplant",
+    url: "images/eggplant.jpg",
+    price: 59.00,
+    priceType: "$$"
+    type: "vegetable"
+        }
+    {
+    title: "Courgette",
+    url: "images/courgette.jpg",
+    price: 22.99,
+    priceType: "$",
+    type: "vegetable"
+        }
+    {
+    title: "Peas",
+    url: "images/peas.jpg",
+    price: 30.00,
+    priceType: "$",
+    type: "vegetable"
+        }
+    {
+    title: "Olives",
+    url: "images/olives.jpg",
+    price: 30.00,
+    priceType: "$"
+    type: "vegetable"
+        }
+    {
+    title: "Cabbage",
+    url: "images/cabbage.jpg",
+    price: 50.00,
+    priceType: "$$"
+    type: "vegetable"
+        }
+    {
+    title: "Lettuce",
+    url: "images/lettuce.jpg",
+    price: 50.00,
+    priceType: "$$",
+    type: "vegetable"
+        }
+    ]
+}
